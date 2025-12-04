@@ -1,10 +1,15 @@
-﻿namespace Task_1
+﻿using System.Drawing;
+
+class Program
 {
-    internal class Program
+    static void Main(string[] args)
     {
-        static void Main(string[] args)
-        {
-            Console.WriteLine("Hello, World!");
-        }
+        Rectangle r = new Rectangle();
+        r.Length = 10;
+        r.Breadth = 5;
+
+        Console.WriteLine("Area: " + r.GetArea());
+        Console.WriteLine("Perimeter: " + r.GetPerimeter());
+        Console.WriteLine(r.ShowDetails());
     }
 }
